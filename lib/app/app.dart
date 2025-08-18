@@ -47,6 +47,8 @@ class _HomeScreen extends StatelessWidget {
       Uri.parse('https://www.mgtcownersclub.com/calendar');
   static final Uri _membershipUri =
       Uri.parse('https://www.mgtcownersclub.com/about');
+  static final Uri _carRegisterUri =
+      Uri.parse('https://transport.wa.gov.au/licensing/vehicle/license-vehicle');
 
   Future<void> _openUri(BuildContext context, Uri uri) async {
     final mode = kIsWeb ? LaunchMode.platformDefault : LaunchMode.externalApplication;
@@ -141,6 +143,13 @@ class _HomeScreen extends StatelessWidget {
                   subtitle: 'About the club membership',
                   icon: Icons.card_membership,
                   onTap: () => _openUri(context, _membershipUri),
+                ),
+                const SizedBox(height: spacing),
+                _LinkTile(
+                  title: 'Car Registration',
+                  subtitle: 'Vehicle license information',
+                  icon: Icons.app_registration,
+                  onTap: () => _openUri(context, _carRegisterUri),
                 ),
               ]),
             ),
