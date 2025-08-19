@@ -59,38 +59,23 @@ A lightweight Flutter app I’m building as a **Curtin CS** student to help my f
 ```bash
 git clone https://github.com/<your-username>/mgtc-app.git
 cd mgtc-app
+
+# Install dependencies
 flutter pub get
+
+# List connected devices (Chrome, Android, iOS, etc.)
+flutter devices
+
 flutter run
+
+# Run the app on Chrome
+flutter run -d chrome
+
 ```
 
 ---
 
-## 🗂️ Project Structure
-
-```
-lib/
-  main.dart
-  core/
-    links.dart
-    theme.dart
-  ui/
-    screens/
-      home_screen.dart
-    widgets/
-      hero_header.dart
-      action_tile.dart
-assets/
-  images/blueprint.png
-docs/
-  screenshots/
-    home.png
-    tiles.png
-    calendar.png
-```
-
----
-
-## 🛣️ Roadmap
+## 🛣️ Possible Future Updates
 
 - [ ] Push notifications for event updates  
 - [ ] Offline calendar snapshot (read-only)  
